@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-<van-button type="warning">警告按钮</van-button>
+<van-button type="warning">警告按钮11</van-button>
   </div>
 </template>
 
