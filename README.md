@@ -1,6 +1,6 @@
-# yinchat
+# yes
 
-> yinchat
+> yes
 
 ## Build Setup
 
