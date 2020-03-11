@@ -1,0 +1,16 @@
+{
+  "id": "1684939",
+  "name": "yin'cha't",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5427697",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}
