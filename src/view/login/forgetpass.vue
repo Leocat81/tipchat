@@ -7,23 +7,15 @@
         </div>
         <Input v-model="username" type="text" placeholder="输入手机号" />
         <br />
-        <inputyzm v-model="username" type="text" />
-        <br />
-        <Input v-model="password" type="password" placeholder="输入密码" />
+         <inputyzm v-model="username" type="text"  />
         <br />
         <div class="box box2" @click="submit">
           <i class="iconfont  icon-jiantou" style="font-size:50px"></i>
         </div>
       </form>
-      <div class="bottom">
-        <div class="register" @click="toLogin">回到登录</div>
-      </div>
       <h4>第三方登录</h4>
-      <div class="weixin">
-        <i
-          class="iconfont  icon-weixin"
-          style="font-size:30px;color:#1afa29"
-        ></i>
+      <div class='weixin'>
+          <i class="iconfont  icon-weixin" style="font-size:30px;color:#1afa29"></i>
       </div>
     </div>
   </div>
@@ -52,8 +44,8 @@ export default {
     submit () {
       this.$get('get')
     },
-    toLogin () {
-      this.$router.push('/')
+    toRegister () {
+      this.$router.push('')
     }
   }
 }
@@ -115,7 +107,7 @@ h4:after {
   align-items: center;
   background-image: linear-gradient(120deg, #2196f3 0%, #8fd3f4 100%);
 }
-.weixin {
+.weixin{
   display: flex;
   justify-content: center;
 }

@@ -15,7 +15,7 @@
       </form>
       <div class="bottom">
         <div class="register" @click="toRegister">注册</div>
-        <div class="forgetpassword">忘记密码</div>
+        <div class="forgetpassword" @click="toForgetpass">忘记密码</div>
       </div>
       <h4>第三方登录</h4>
       <div class='weixin'>
@@ -43,9 +43,14 @@ export default {
     Input
   },
   methods: {
-    submit () {},
-    toRegister () {
+    submit () {
+      this.$router.push('/Loan')
+    },
+    toRegister (data) {
       this.$router.push('/register')
+    },
+    toForgetpass () {
+      this.$router.push('/forgetpass')
     }
   }
 }
