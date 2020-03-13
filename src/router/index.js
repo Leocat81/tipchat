@@ -5,6 +5,9 @@ import login from '@/view/login/login'
 import register from '@/view/login/register'
 import BaseTransition from '../BaseTransition'
 import forgetpass from '@/view/login/forgetpass'
+import BaseView from '../BaseView'
+import maillist from '@/view/maillist'
+import frimore from '@/view/maillist/friviewmore'
 import chat from '@/view/chat'
 Vue.use(Router)
 
@@ -38,6 +41,21 @@ export default new Router({
           path: 'chat',
           name: 'chat',
           component: chat
+        }
+      ]
+    },
+    {
+      path: '/maillist',
+      component: BaseView,
+      children: [
+        {
+          path: '',
+          name: 'maillist',
+          component: maillist
+        }, {
+          path: 'friviewmore',
+          name: 'frimore',
+          component: frimore
         }
       ]
     }

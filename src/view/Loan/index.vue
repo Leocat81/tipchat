@@ -1,13 +1,15 @@
 <!--  -->
 <template>
-  <div>
-
-    <div v-for="(item, index) in arr" :key="index" class="van-hairline--bottom">
+  <div >
+    <Narbar msgNum="10"></Narbar>
+    <div class="msgliststl ">
+    <div v-for="(item, index) in arr" :key="index">
           <van-swipe-cell>
       <van-card
         tag="2"
         thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
         style="padding: 0px 13px;"
+        class="van-hairline--bottom"
         @click="toChat"
       >
         <div slot="title">
@@ -25,23 +27,30 @@
     class="delete-button"
   />
           </van-swipe-cell>
-    </div>
 
+    </div>
+    </div>
+            <Tabbar></Tabbar>
   </div>
+
 </template>
 
 <script>
 import { Card, Button, SwipeCell } from 'vant'
+import Tabbar from '@/components/tabbar/tabbar'
+import Narbar from '@/components/narbar/narbar'
 export default {
   data () {
     return {
-      arr: [1, 2, 3]
+      arr: [1, 2, 3, 4, 5, 6, 7, 7, 2, 2, 2, 2]
     }
   },
   components: {
     [Card.name]: Card,
     [Button.name]: Button,
-    [SwipeCell.name]: SwipeCell
+    [SwipeCell.name]: SwipeCell,
+    Tabbar,
+    Narbar
   },
   // 生命周期 - 创建完成（访问当前this实例）
   created () {},
@@ -66,5 +75,9 @@ export default {
 }
 .delete-button {
   height: 100%;
+}
+.msgliststl{
+height: 92%;
+overflow: auto;
 }
 </style>

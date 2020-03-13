@@ -4,8 +4,7 @@
     <!-- 头部导航 -->
     <van-nav-bar title="黄伟" left-arrow style="background-color:#2196f3">
       <div slot="left">
-        <van-icon name="arrow-left" size="20" color="white"
-          ><span class="leftstl">消息</span></van-icon
+        <van-icon name="arrow-left" size="20" color="white" @click="$router.go(-1)"><span class="leftstl">消息</span></van-icon
         >
       </div>
       <div slot="right">

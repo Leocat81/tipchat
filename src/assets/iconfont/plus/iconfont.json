@@ -1,0 +1,44 @@
+{
+  "id": "1684939",
+  "name": "yin'cha't",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10561741",
+      "name": "Plus",
+      "font_class": "Plus",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "1190873",
+      "name": "plus",
+      "font_class": "plus1",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "1237171",
+      "name": "加号",
+      "font_class": "plus",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "12316927",
+      "name": "相册",
+      "font_class": "xiangce",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5427697",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}
