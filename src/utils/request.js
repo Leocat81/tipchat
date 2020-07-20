@@ -8,10 +8,7 @@ moment.locale('zh-cn')
 
 // 统一配置
 const FEBS_REQUEST = axios.create({
-  // baseURL: 'http://120.27.155.99:8088/api/v1/', // 从生产环境中读取请求前缀
-  // baseURL: 'http://47.106.68.94:18000', // 从生产环境中读取请求前缀
-  // baseURL: '127.0.0.1:80', //配置nginx跨域请求
-  baseURL: '/api',
+  baseURL: '', // 从生产环境中读取请求前缀
   responseType: 'json',
   validateStatus (status) {
     // 200 外的状态码都认定为失败as
@@ -110,13 +107,13 @@ const request = {
   },
   put (url, params) {
     if (url === 'ys/class/course/excel' ||
-            url === 'ys/dietary/excel' ||
-            url === 'user/student/excel' ||
-            url === 'school/excel' ||
-            url === 'user/teacher/excel' ||
-            url === 'patriarch/excel' ||
-            url === 'classInfo/excel' ||
-            url === 'user/teacher/principal/excel') {
+      url === 'ys/dietary/excel' ||
+      url === 'user/student/excel' ||
+      url === 'school/excel' ||
+      url === 'user/teacher/excel' ||
+      url === 'patriarch/excel' ||
+      url === 'classInfo/excel' ||
+      url === 'user/teacher/principal/excel') {
       return FEBS_REQUEST.put(url, params, {
         transformRequest: [(params) => {
           const formData = new FormData()

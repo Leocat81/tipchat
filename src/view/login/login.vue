@@ -44,6 +44,15 @@ export default {
   },
   methods: {
     submit () {
+      this.$post('/api/login', {
+        username: this.username,
+        password: this.password
+      }).then((res) => {
+        debugger
+      })
+        .catch((err) => {
+          console.log(err)
+        })
       this.$router.push('/Loan')
     },
     toRegister (data) {
