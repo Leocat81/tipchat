@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     submit () {
-      this.$post('/api/login', {
+      this.$post('/login', {
         username: this.username,
         password: this.password
       }).then((res) => {

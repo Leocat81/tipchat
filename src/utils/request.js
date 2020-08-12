@@ -8,7 +8,7 @@ moment.locale('zh-cn')
 
 // 统一配置
 const FEBS_REQUEST = axios.create({
-  baseURL: '', // 从生产环境中读取请求前缀
+  baseURL: 'http://localhost:8081/api', // 从生产环境中读取请求前缀
   responseType: 'json',
   validateStatus (status) {
     // 200 外的状态码都认定为失败as
