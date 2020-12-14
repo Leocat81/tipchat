@@ -48,7 +48,6 @@ export default {
         username: this.username,
         password: this.password
       }).then((res) => {
-        debugger
       })
         .catch((err) => {
           console.log(err)
