@@ -33,6 +33,7 @@
               v-model="message"
               class="msgstl"
               @focus="inputChange"
+              v-myclick="test"
             />
           </template>
           <template slot="right-icon">
@@ -95,6 +96,7 @@ import '@/assets/iconfont/xiangce/iconfont.css'
 export default {
   data () {
     return {
+      test: [1, 2, 3, 4],
       footerIconType: 'upload',
       activeNames: [],
       emoji: emoji,
@@ -131,6 +133,7 @@ export default {
   },
   methods: {
     sendMes (message) {
+      this.test = [5, 6, 78, 78]
       this.activeNames = []
       this.msg.push({
         imgUrl:

@@ -1,6 +1,6 @@
 <template>
   <div class="chat-input-outer">
-    <input v-bind="$attrs" ref="input" class="chat-input" :value="initValue" :type="type" @input="handleInput">
+    <input v-bind="$attrs" ref="input" class="chat-input" :value="initValue" :type="type" @input="handleInput" autocomplete>
   </div>
 </template>
 

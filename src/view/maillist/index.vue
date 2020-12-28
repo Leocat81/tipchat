@@ -41,7 +41,7 @@
             })
           "
         >
-          <img :src="it.hUrl" class="header" />
+          <img v-lazy="it.hUrl" class="header" />
           <div class="friendname">
             <span>{{ it.name }}</span>
           </div>
